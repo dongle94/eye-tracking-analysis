@@ -59,16 +59,6 @@ def test():
     print(winctrl.get_winname(), winctrl.get_hwnd())
     winctrl.screenshot('./sample2.jpg')
 
-    # l, t, w, h = win32gui.GetClientRect(hwnd)
-    # x1, y1 = win32gui.ClientToScreen(hwnd, (l, t))
-    # x2, y2 = win32gui.ClientToScreen(hwnd, (w, h))
-    # print(l, t, w, h)
-    # print(x1, y1, x2, y2)
-    #
-    # im = pyautogui.screenshot(region=(x1, y1, w, h))    # ltwh
-    # print(type(im), dir(im))
-    # im.save('./sample.jpg')
-
 
 if __name__ == "__main__":
     test()
